@@ -10,6 +10,7 @@ npm install
 
 ## Run the application
 
+
 To compile and run the source files, use the below command
 
 ```

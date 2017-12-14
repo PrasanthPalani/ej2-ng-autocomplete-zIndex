@@ -23,6 +23,7 @@
       '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
       '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
       '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
+      'typescript': 'npm:typescript@2.1.5/lib/typescript.js',
 
       '@syncfusion/ej2-base': 'syncfusion:ej2-base/dist/ej2-base.umd.min.js',
       '@syncfusion/ej2-data': 'syncfusion:ej2-data/dist/ej2-data.umd.min.js',
@@ -33,6 +34,7 @@
       "@syncfusion/ej2-dropdowns": 'syncfusion:ej2-dropdowns/dist/ej2-dropdowns.umd.min.js',
       '@syncfusion/ej2-ng-base': 'syncfusion:ej2-ng-base/dist/ej2-ng-base.umd.min.js',
       '@syncfusion/ej2-ng-dropdowns': 'syncfusion:ej2-ng-dropdowns/dist/ej2-ng-dropdowns.umd.min.js',
+      '@ng-bootstrap/ng-bootstrap': 'npm:@ng-bootstrap/ng-bootstrap/bundles/ng-bootstrap.js',
 
       // other libraries
       'rxjs':                      'npm:rxjs',

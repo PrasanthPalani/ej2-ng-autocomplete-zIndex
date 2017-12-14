@@ -1,14 +1,19 @@
-import { NgModule }      from '@angular/core';
+import { Component, NgModule, ViewChild } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-// import the DropDownListModule for the DropDownList component
-import { AppComponent }  from './app.component';
-import { AutoCompleteComponent } from '@syncfusion/ej2-ng-dropdowns';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { JsonpModule } from '@angular/http';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; 
+import { AppComponent } from './app.component';
+import { AutoCompleteModule } from '@syncfusion/ej2-ng-dropdowns';
+
+
+/**
+ * Module
+ */
 
 @NgModule({
-  //declaration of ej2-ng-dropdowns module into NgModule
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, AutoCompleteComponent ],
-  bootstrap:    [ AppComponent ]
+  imports: [BrowserModule, FormsModule, AutoCompleteModule, ReactiveFormsModule, JsonpModule, NgbModule.forRoot()], 
+  declarations: [AppComponent],
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

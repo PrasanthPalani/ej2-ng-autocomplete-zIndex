@@ -8,9 +8,13 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var forms_1 = require("@angular/forms");
-// import the DropDownListModule for the DropDownList component
+var http_1 = require("@angular/http");
+var ng_bootstrap_1 = require("@ng-bootstrap/ng-bootstrap");
 var app_component_1 = require("./app.component");
 var ej2_ng_dropdowns_1 = require("@syncfusion/ej2-ng-dropdowns");
+/**
+ * Module
+ */
 var AppModule = (function () {
     function AppModule() {
     }
@@ -18,9 +22,8 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        //declaration of ej2-ng-dropdowns module into NgModule
-        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule],
-        declarations: [app_component_1.AppComponent, ej2_ng_dropdowns_1.AutoCompleteComponent],
+        imports: [platform_browser_1.BrowserModule, forms_1.FormsModule, ej2_ng_dropdowns_1.AutoCompleteModule, forms_1.ReactiveFormsModule, http_1.JsonpModule, ng_bootstrap_1.NgbModule.forRoot()],
+        declarations: [app_component_1.AppComponent],
         bootstrap: [app_component_1.AppComponent]
     })
 ], AppModule);
